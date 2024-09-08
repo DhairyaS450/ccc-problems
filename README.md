@@ -1,13 +1,17 @@
 **Canadian Computing Competition (CCC) Problems Repository**
 Welcome to the Canadian Computing Competition (CCC) Problems repository! This repository serves as a collection of problems, solutions, and resources related to the CCC, aimed at helping students and enthusiasts prepare for the competition.
+
 **About the CCC**
+
 The Canadian Computing Competition (CCC) is an annual programming competition hosted by the University of Waterloo. It is designed to help secondary school students develop their problem-solving skills and compete against peers across Canada. The competition is divided into two levels:
 
 **Junior Level**: For beginners and intermediate coders.
+
 **Senior Level**: For advanced students with more programming experience.
 For more information, visit the official CCC website.
 
 **Contributing**
+
 We welcome contributions from the community! If you'd like to contribute:
 
 Fork the repository.
