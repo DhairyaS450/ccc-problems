@@ -1,0 +1,27 @@
+Examples:
+LMMMS -> 0
+It is already in the correct order
+
+LLSLM -> 2
+The L and the S need to be swapped -> LLLSM
+Then the M and the S need to be swapped -> LLLMS
+
+We need to find the most efficient way to do this
+1. First count Ls, Ms and Ss -> 3, 1, 1
+    So, first 3 books have to be L, next 1 book has to be M and next 1 book has to be S
+2. Split the shelf into sections (l_section, m_section, s_section).
+    Each section will have a length of the number of books of that size that exist on the shelf
+    l_section -> LLS
+    m_section -> L
+    s_section -> M
+3. Find what is misplaced or in wrong section and make swaps. Prioritize swaps which get 2 things correct.
+    Swaps that make 2 things correct here dont exist. Go to ones that make 1 thing correct.
+    First, the S is in the l_section which is wrong. Swap it with the M in the s_section
+    LLM
+    L
+    S
+    Check again, the M and the L are both wrong, swap them
+    LLL
+    M
+    S
+    Now it is correct, total_swaps = 2

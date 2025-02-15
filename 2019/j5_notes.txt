@@ -1,0 +1,28 @@
+Procedure:
+
+Rules:
+AA -> AB
+AB -> BB
+B -> AA
+Objective:
+AB -> AAAB in 4 moves
+
+First find which rules can apply and in which positions.
+Ie. Find all instances of substring rule1[0] -> AA in string, 
+    find all instances of substring rule2[0] -> AB in string and 
+    find all instances of substring rule3[0] -> B in string 
+For AB, rule 1 wont apply, rule 2 will apply at position 0-1 and rule 3 will apply at position 1
+
+Try rule 2 first and get BB. 1 step complete. 
+For BB, rule 1 has no positions, rule 2 has no positions, rule 3 has position 0 and 1
+Try position 0
+BB -> AAB. 2 steps complete.
+For AAB, rule 1 has position 0-1, rule 2 has position 1-2, rule 3 has position 2
+...
+End cases
+1. the maximum number of steps has been reached -> terminate the branch
+2. the end goal has been reached in the desired number of steps -> print the sequence and end the program
+
+Performance improvements:
+- Use memoization with a visited set to avoid rechecking the same sequences
+- Precompile the regex patterns
